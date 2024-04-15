@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background-color: #000;
+      font-family: 'Roboto Mono', monospace;
+      color: #00FF00; /* Bright green */
+      font-size: 16px;
+    }
+
+    a {
+      color: #00FF00; /* Bright green */
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+   .pgp-key-box {
+  height: 200px; /* Adjust height as needed */
+ overflow: auto;
+}
+
+    .card {
+      background-color: rgba(0, 0, 0, 0.8);
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    }
+
+    .card h1 {
+      font-size: 2.5rem;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .form-control {
+      margin-bottom: 20px;
+    }
+
+    .form-control label {
+      font-size: 1rem;
+      margin-bottom: 5px;
+      display: block;
+    }
+
+    .form-control input,
+    .form-control textarea {
+      width: 100%;
+      padding: 10px;
+      border-radius: 5px;
+      border: none;
+      background-color: rgba(255, 255, 255, 0.1);
+      color: #00FF00; /* Bright green */
+      resize: none;
+    }
+
+    .form-control input::placeholder,
+    .form-control textarea::placeholder {
+      color: rgba(255, 255, 255, 0.5);
+    }
+
+    .form-control input:focus,
+    .form-control textarea:focus {
+      outline: none;
+      box-shadow: 0px 0px 5px rgba(0, 255, 0, 0.5); /* Bright green */
+    }
+
+    .form-control textarea {
+      height: 100px;
+    }
+
+    .btn {
+      background-color: #00FF00; /* Bright green */
+      color: #000;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      box-shadow: 0 4px 8px rgba(0, 255, 0, 0.3);
+    }
+
+    .btn:hover {
+      background-color: #007700; /* Darker green */
+      box-shadow: 0 8px 16px rgba(0, 255, 0, 0.3);
+    }
+
+    .contact-info {
+      color: #00FF00;
+    }
+
+    .contact-info p {
+      text-align: center;
+      font-size: 14px;
+    }
+
+    .contact-info pre {
+      text-align: center;
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <h1>Contact Us</h1>
+      <p>Fill up the form below to send us a message.</p>
+      <form action="https://api.web3forms.com/submit" method="POST" id="form" class="form-control">
+        <input type="hidden" name="access_key" value="6f4b8b85-9118-4a88-b1c0-29c7e11761fe" />
+        <input type="hidden" name="subject" value="New Submission from Web3Forms" />
+        <input type="checkbox" name="botcheck" id="" style="display: none;" />
+
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" name="name" id="name" placeholder="Joe Biden" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" placeholder="you@yourcompany.com" required />
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea rows="5" name="message" id="message" placeholder="Your Message" required></textarea>
+        </div>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+      <p id="result"></p>
+    </div>
+    <div class="contact-info">
+      <p>Business: <a href="mailto:insertnocoins@protonmail.com">insertnocoins@protonmail.com</a> (business only!) </p>
+      <p>Personal: <a href="mailto:faxcorp@yahoo.com">faxcorp@yahoo.com</a></p>
+      <p>Discord server: <a href="https://discord.gg/JcvhM58xdW">https://discord.gg/JcvhM58xdW</a></p>
+ <div class="pgp-key-box">
+    <pre>
+-----BEGIN PGP PUBLIC KEY BLOCK-----
+
+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
+lC86F6iF
+=qXjY
+-----END PGP PUBLIC KEY BLOCK-----
+
+    </pre>
+  </div>
+        <style>
+    .containerb {
+      text-align: center;
+    }
+  </style>
+
+  <div class="containerb">
+    <p>Buy me a coffee:</p>
+    <p>bitcoin: bc1qgck3cm4tjeyxstzfxtk57sj58mwp3xgn5mnrz0?message=donate</p>
+    <p>monero: 85AHTpWvoYyGYKcqYLUXsUD6651sbqBy74dDvFVqPMcmd2bAHA8KDfcM3Yu6NanSQ4cTHdoCiA8W1baViHnjbuQML3TkRNK</p>
+  </div>
+    </div>
+
+
+  </div>
+
+</body>
+</html>
